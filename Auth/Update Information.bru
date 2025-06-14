@@ -1,0 +1,18 @@
+meta {
+  name: Update Information
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{BASE_URL}}/auth/me
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Mark",
+    "email": "test@example.com"
+  }
+}

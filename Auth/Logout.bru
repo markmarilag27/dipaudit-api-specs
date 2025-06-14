@@ -1,0 +1,18 @@
+meta {
+  name: Logout
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{BASE_URL}}/auth/logout
+  body: none
+  auth: inherit
+}
+
+body:json {
+  {
+    "email": "test@example.com",
+    "password": "password"
+  }
+}

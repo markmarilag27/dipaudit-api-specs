@@ -1,0 +1,18 @@
+meta {
+  name: Information
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{BASE_URL}}/auth/me
+  body: none
+  auth: inherit
+}
+
+body:json {
+  {
+    "email": "test@example.com",
+    "password": "password"
+  }
+}
