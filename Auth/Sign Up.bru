@@ -1,0 +1,19 @@
+meta {
+  name: Sign Up
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{BASE_URL}}/auth/sign-up
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Mark Marilag",
+    "email": "mark.marilag27@gmail.com",
+    "password": "0r<P&f$1SO59"
+  }
+}
